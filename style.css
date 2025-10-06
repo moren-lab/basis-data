@@ -1,0 +1,313 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(21, 20, 20);
+  padding-top: 5rem; /* 80px */
+  margin: auto;
+}
+
+.home {
+  background-image: url(wallpaper.jpg);
+  background-size: cover;
+  padding-top: 5rem; /* 80px */
+}
+
+.me {
+  background-image: url(wallpaper\ 2.jpg);
+}
+
+.post {
+  background-image: url(wallpaper.jpg);
+  background-size: cover;
+  padding-top: 5rem; /* 80px */
+  margin: auto;
+}
+
+.header1 {
+  font-size: 6.25rem; /* 100px */
+  height: 12.5rem; /* 200px */
+  color: white;
+}
+
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(1rem);
+  width: 100%; /* jangan 150%, biar responsif */
+  height: 4.625rem; /* 74px */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar a:hover {
+  color: #c7a15a;
+  transition: 0.3s;
+}
+
+.navbar a.active {
+  color: #c7a15a;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.List {
+  list-style-type: none;
+  padding: 1.25rem; /* 20px */
+  margin: 0.3125rem; /* 5px */
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.listabout {
+  height: 15.625rem; /* 250px */
+  width: 25rem; /* 400px */
+  list-style: none;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.spasi {
+  height: 12.5rem; /* 200px */
+}
+
+.listabout {
+  color: white;
+  list-style-type: none;
+  margin-bottom: 1.5625rem; /* 25px */
+  font-weight: bold;
+}
+
+.desc {
+  margin-top: 0.5rem; /* 8px */
+  font-weight: normal;
+  line-height: 1.5;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 0 31.25rem rgba(0, 0, 0, 0.2); /* 500px */
+  transition: scale(600.0); /* efek ini sebenarnya salah, nanti kita bisa benahi */
+  background: transparent;
+  backdrop-filter: blur(0.625rem); /* 10px */
+}
+
+.card:hover {
+  box-shadow: 0 0 18.75rem rgba(0, 0, 0, 0.2); /* 300px */
+}
+
+.container {
+  padding: 0.125rem 1rem; /* 2px 16px */
+  color: white;
+}
+
+.cardkecil {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2); /* 0 4px 8px 0 */
+  transition: scale(600.0);
+  width: 21.875rem; /* 350px */
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2); /* 0 8px 16px 0 */
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Intro {
+  font-size: 9.375rem; /* 150px */
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem; /* 40px */
+  background: rgba(21, 20, 20, 0.4);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-col {
+  flex: 1;
+  margin: 0 1.25rem; /* 20px */
+}
+
+.footer h2,
+.footer h3 {
+  color: white;
+  margin-bottom: 0.9375rem; /* 15px */
+}
+
+.footer p {
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: 0.9375rem; /* 15px */
+  padding: 0.75rem 1.5rem; /* 12px 24px */
+  background-color: #c7a15a;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.125rem; /* 2px */
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+
+.Img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.social {
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin-bottom: 20rem;
+}
+
+.bodys {
+  background-image: url(storm.jpg);
+}
+
+.social {
+  margin-top: 0.3125rem; /* 5px */
+  padding: 0.75rem 1.5rem; /* 12px 24px */
+}
+
+.basisdata {
+  color: white;
+}
+
+.teks {
+  font-size: 1rem;
+  color: white;
+  padding: 3.125rem; /* 50px */
+  word-spacing: 0.15625rem; /* 2.5px */
+}
+
+.btnn {
+  margin-top: 0.9375rem; /* 15px */
+  padding: 0.75rem 1.5rem; /* 12px 24px */
+  background-color: #c7a15a;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.125rem; /* 2px */
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: fixed;
+  bottom: 1.25rem; /* 20px */
+  right: 1.25rem; /* 20px */
+  display: flex;
+  gap: 0.625rem; /* 10px */
+}
+
+.btnn:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 1.25rem; /* 20px */
+  right: 1.25rem; /* 20px */
+  display: flex;
+  gap: 0.625rem; /* 10px */
+}
+
+.sosmed-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* 40px */
+  margin-top: 25rem; /* 400px */
+}
+
+.social:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive untuk layar kecil (HP) */
+@media (max-width: 600px) {
+  .header1 {
+    font-size: 2rem;   /* lebih kecil dari 100px */
+    height: auto;
+    text-align: center;
+  }
+
+  .Intro {
+    font-size: 3rem;   /* lebih kecil dari 150px */
+    text-align: center;
+  }
+
+  .navbar {
+    height: 3.5rem;    /* lebih ramping */
+    flex-direction: column;
+  }
+
+  
+
+  .listabout {
+    width: 50%; /* biar tidak fixed 400px */
+    height: auto;
+  }
+
+  .cardkecil {
+    width: 90%; /* biar muat di layar HP */
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .sosmed-container {
+    margin-top: 5rem; /* biar tidak kejauhan */
+    gap: 1.25rem;
+  }
+
+  .btnn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
