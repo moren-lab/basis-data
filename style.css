@@ -104,6 +104,7 @@ body {
   transition: scale(600.0); /* efek ini sebenarnya salah, nanti kita bisa benahi */
   background: transparent;
   backdrop-filter: blur(0.625rem); /* 10px */
+  margin: 3rem;
 }
 
 .card:hover {
@@ -311,3 +312,42 @@ body {
     font-size: 0.875rem;
   }
 }
+
+ h1 {
+  color: #00bfff;
+
+}
+
+.table-container {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+

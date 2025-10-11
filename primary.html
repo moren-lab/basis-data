@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="ul"> 
+            <li class="List"><a href="index.html">HOME </a></li>
+            <li class ="List"><a href="about me.html"> ABOUT ME </a></LI>
+            <li class = "List"><a href="post.html" class="active">POST</a></li>
+            <li class = "List"><a href="social.html">SOCIAL MEDIA </a></li>
+        </ul>
+    </div>
+   
+    <div class="basisdata">
+     <center>
+         <h1>Apa itu Primary Key, Foregnt Key dan Candidate Key?</h1>
+         <div class="teks">
+             <p align="justify"> Primary Key adalah atribut utama dalam sebuah tabel yang berfungsi untuk membedakan setiap baris data secara unik. 
+                Nilai Primary Key tidak boleh sama dan tidak boleh kosong. Contohnya seperti NIM pada tabel Mahasiswa yang menjadi identitas unik setiap mahasiswa. </p> <br>
+                 <p align="justify">
+                     Foreign Key adalah atribut yang digunakan untuk menghubungkan satu tabel dengan tabel lain. Foreign Key diambil dari Primary Key tabel lain 
+                     agar sistem dapat memahami hubungan antar entitas. Misalnya, pada tabel Nilai, kolom NIM menjadi Foreign Key yang mengacu ke tabel Mahasiswa, sehingga setiap nilai dapat dihubungkan dengan mahasiswa tertentu.
+                    </p> <br>
+
+                    <p align="justify">
+                     Candidate Key adalah atribut-atribut yang berpotensi menjadi
+                      Primary Key karena nilainya juga unik dan tidak boleh kosong. 
+                      Dari beberapa Candidate Key, hanya satu yang dipilih sebagai Primary Key,
+                       sedangkan yang lain tetap dapat digunakan sebagai identitas alternatif. Misalnya, dalam tabel Mahasiswa, atribut NIM, Email, dan NoHP semuanya dapat menjadi Candidate Key karena nilainya unik bagi setiap mahasiswa
+                    </p> <br>
+
+           
+
+                    <h1>Contoh 5 masing - masing penerapan pada ERD</h1>
+                </center>
+
+                <div class="table-container">
+    <center>
+        <h2>1. Primary Key</h2>
+    </center>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Nama Tabel</th>
+        <th>Kolom Primary Key</th>
+      </tr>
+      <tr><td>1</td><td>Mahasiswa</td><td>NIM</td></tr>
+      <tr><td>2</td><td>Dosen</td><td>NIP</td></tr>
+      <tr><td>3</td><td>Mata_Kuliah</td><td>Kode_MK</td></tr>
+      <tr><td>4</td><td>Nilai</td><td>ID_Nilai</td></tr>
+      <tr><td>5</td><td>Prodi</td><td>Kode_Prodi</td></tr>
+    </table>
+    <center>
+      <img src="primary key.png" width="400" height="">
+    </center>
+  </div>
+
+  <div class="table-container">
+    <center>
+        <h2>2. Foreign Key</h2>
+    </center>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Nama Tabel</th>
+        <th>Kolom Foreign Key</th>
+        <th>Referensi</th>
+      </tr>
+      <tr><td>1</td><td>Mahasiswa</td><td>NIP_DosenWali</td><td>Dosen(NIP)</td></tr>
+      <tr><td>2</td><td>Nilai</td><td>NIM</td><td>Mahasiswa(NIM)</td></tr>
+      <tr><td>3</td><td>Nilai</td><td>Kode_MK</td><td>Mata_Kuliah(Kode_MK)</td></tr>
+      <tr><td>4</td><td>KRS</td><td>NIM</td><td>Mahasiswa(NIM)</td></tr>
+      <tr><td>5</td><td>KRS</td><td>Kode_MK</td><td>Mata_Kuliah(Kode_MK)</td></tr>
+    </table>
+  </div>
+ <center>
+      <img src="foregent.png" width="400" height="">
+    </center>
+  <div class="table-container">
+    <center>
+        <h2>3. Candidate Key</h2>
+    </center>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Nama Tabel</th>
+        <th>Kolom Candidate Key</th>
+      </tr>
+      <tr><td>1</td><td>Mahasiswa</td><td>NIM, Email</td></tr>
+      <tr><td>2</td><td>Dosen</td><td>NIP, Email</td></tr>
+      <tr><td>3</td><td>Mata_Kuliah</td><td>Kode_MK, Nama_MK</td></tr>
+      <tr><td>4</td><td>Prodi</td><td>Kode_Prodi, Nama_Prodi</td></tr>
+      <tr><td>5</td><td>Nilai</td><td>ID_Nilai, (NIM + Kode_MK)</td></tr>
+    </table>
+     <center>
+      <img src="candidate key.png" width="400" height="">
+    </center>
+  </div>
+  
+  <div class="button-container">
+    <a href="install.html">
+        
+        <button class="btn prev">← Previous</button>
+    </a>
+    <a href="post.html">
+        
+        <button class="btn next">POST →</button>
+    </a>
+  </div>
+                
+            </div>
+        </div>
